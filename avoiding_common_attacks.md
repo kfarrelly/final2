@@ -11,5 +11,5 @@ Using safemath Libraries, as well as modifiers, and open zeppelin standards prot
  - Open Zeppelin due to how secure its known to be. 
  - Pre and post variant modifiers for later in the design when  the generator has more functionality. 
  
- Adding a mint() function to the ERC721 from zeppelin for the owner of the contract which wasn't included. This was done via only calling the standard `_mint()` that is only internal. That way I didn't need to trust my own code to mint a new token, but instead rely on the trusted zeppelin code. 
+ Adding a mint() function to the ERC721 from zeppelin for the owner of the contract which wasn't included. This was done via only calling the standard `_mint()` that is only internal. That way I didn't need to trust my own code to mint a new token, but instead rely only on the trusted zeppelin code. 
  
