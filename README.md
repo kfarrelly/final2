@@ -11,7 +11,7 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
   - Mintable is a dapp that allows for people to create ERC721 tokens without needing programming knowledge. The dapp will let anyone set the metadata, and information of a ERC721 standard contract. A contract is then created on the blockchain and the user who sent the transaction is the owner. Allowing for anyone to make cards/ERC721s/collectibles/anything.
   
   
-  
+ 
   ---
   
   
