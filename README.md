@@ -16,7 +16,10 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
   
   
   **Everything below is for Consensys grading**
-
+  
+  *You can find all the code within /src/ and the smart contracts within /contracts/*
+  
+  
 -  	How to set it up and use the Rinkeby Test Network **if you don't want to use mintable.app**
 
   `mkdir mintable`
