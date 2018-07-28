@@ -1,0 +1,105 @@
+.custom {
+  position: relative;
+  top: -250px;
+  width: 75%;
+}
+.center {
+  position: relative;
+  margin: auto;
+  margin-left: 45%;
+}
+.left {
+  left: 06px;
+  padding-left: 0px;
+  margin-left: 0%;
+}
+.max {
+  max-width: 75%;
+  max-height: 75%;
+}
+.box {
+  border: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.word-wrap {
+  word-break: break-all;
+  padding: 0;
+  margin: 0;
+}
+.colored {
+  background-color: #0c66a1;
+}
+.margin {
+  margin: auto;
+  position: relative;
+}
+.danger {
+  background-color: #0f52ba;
+}
+.sizing {
+  height: 900px;
+  padding: 50px;
+}
+.nearBottom {
+  position: relative;
+  bottom: calc(-15vh);
+}
+.has-background {
+  background-color: #000080;
+}
+.topleft {
+  padding-top: 15px;
+}
+.Left {
+  position: absolute;
+  left: 0%;
+}
+.customBox {
+  max-width: 950px;
+  width: 75%;
+}
+.max1 {
+  max-width: 250px;
+  max-height: 250px;
+}
+.Row {
+  display: table;
+}
+.item {
+  float: left;
+}
+.toppadding {
+  margin-top: 4rem;
+}
+.vcentered {
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+.tabs {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.relative {
+  position: relative;
+}
+.loading {
+  color: rgb(66, 165, 245);
+}
+.background {
+  background-color: #669fb8;
+  width: 100%;
+}
+.marginTop {
+  margin-top: 25px;
+}
+.padding50 {
+  display: flex;
+  padding: 50px;
+}
+.shadowbox {
+  box-shadow: -15px -1px 19px -4px #305;
+}
+.center1 {
+  position: relative;
+}

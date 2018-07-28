@@ -1,0 +1,48 @@
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.total {
+  position: relative;
+}
+.sized {
+  max-width: 500px;
+}
+.border1 {
+  border-radius: 35px;
+}
+.positioning {
+  position: absolute;
+
+  right: 4.2rem;
+
+  top: 0%;
+}
+.margined1 {
+  display: flex;
+  margin: auto;
+}
+.x50 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.fadeOut1 {
+  animation: opacity 20s;
+  opacity: 1;
+  animation-iteration-count: infinite;
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.positioning {
+  position: absolute !important;
+  left: -15em !important;
+  margin-bottom: -1rem !important;
+}
+.bottomRight {
+  position: fixed !important;
+  bottom: 0 !important;
+  padding: 1em !important;
+  right: 0 !important;
+}
+.flexw {
+  display: flex;
+  flex-wrap: wrap;
+}
+.z {
+  z-index: 3;
+}
+.hoverable {
+  opacity: 1;
+}
+.huge {
+  font-size: 4vh;
+}
+.hoverable:hover {
+  background-color: #305;
+  color: white;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 480px) {
+  .positioning {
+    position: absolute !important;
+    left: -1em !important;
+  }
+  .bottomRight {
+    position: fixed !important;
+    bottom: 0 !important;
+    padding: 1rem !important;
+    right: 0 !important;
+  }
+  .mobile {
+    margin-bottom: -4rem !important;
+  }
+}
