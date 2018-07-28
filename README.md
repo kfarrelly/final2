@@ -1,8 +1,9 @@
-# Mintable 
+![Mintable.app](https://github.com/VexyCats/final2/blob/master/src/images/mintable.jpg?raw=true)
+
 Mintable is a DApp on the Ethereum Blockchaian that allows for you to create, and manage ERC721s.
 
 
-#Mintable beta is live on the test network, visit [Mintable.app](http://mintable.app)
+# Mintable beta is live on the test network, visit [Mintable.app](http://mintable.app)
 If you want to run it locally, clone, `npm install`, then `npm run start` no need to migrate or compile with truffle.
 
 -  	What does your project do?
@@ -44,7 +45,7 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
 
   - [X] Done
   
-- 	Write a sentence or two explaining what the tests are covering, and explain why you wrote those tests
+  - Tests:
 
  
 ●  	A development server to serve the front end interface of the application
@@ -55,18 +56,25 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
 
 
 ●  	A document called avoiding_common_attacks.md that explains what measures you took to ensure that your contracts are not susceptible to common attacks. (Module 9 Lesson 3)
+
   - see avoiding_common_attacks.md
 
 
  
 ●  	Implement a library or an EthPM package in your project
+
   - [X] Done using SafeMath, OpenZeppelin Contracts, Melon Libraries
 
 ○  	If your project does not require a library or an EthPM package, demonstrate how you would do that in a contract called LibraryDemo.sol
   
-We ask that you develop your application and run the other projects during evaluation in a VirtualBox VM running Ubuntu 16.04 to reduce the chances of run time environment variables.
+
+
+---
+
+
+
  
-Requirements
+# Requirements
   - [X] 	User Interface Requirements:
   - [X] 	Run the app on a dev server locally for testing/grading
   - [X] 	You should be able to visit a URL and interact with the application
@@ -74,23 +82,21 @@ Requirements
   - [X]	Sign transactions using MetaMask
   - [X] Contract state is updated
   - [X]	Update reflected in UI
- 
-●  	Test Requirements:
-  - [_]  	Write 5 tests for each contract you wrote
-  - [X]  	Solidity or JavaScript
-○  	Explain why you wrote those tests
-○  	Tests run with truffle test
- 
-  - [X]  	Design Pattern Requirements:
+  Design Pattern Requirements:
   - [X]	Implement emergency stop
   - [X] What other design patterns have you used / not used?
   - [X]	Why did you choose the patterns that you did?
-  - [X]	Why not others?
- 
+  - [X]	Why not others? 
   - [X] 	Security Tools / Common Attacks:
   - [X] 	Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
- 
   - [X]	  Use a library
+# Test Requirements:
+  - [_]  	Write 5 tests for each contract you wrote
+  - [X]  	Solidity or JavaScript
+  - [X] 	Explain why you wrote those tests
+  - [X] 	Tests run with truffle test
+ 
+
 
 
 
