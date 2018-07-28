@@ -20,4 +20,3 @@ First and foremost, the main Generator contracts needs to be able to generate ER
  put up an upgradeable manager yet, although its on the way! 
  
  The event firing, creation of tokens, and handling of error is all done via design of the `createERC721()` function. The first act is the contract creation that if fails, will stop before anything is done. 
- Secondly, the data is stored to prevent against reentrancy, and finally, returning the contract address as well. 
