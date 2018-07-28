@@ -1,4 +1,4 @@
-#Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
+# Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
 
 
 When creating this dapp, security was on the forefront of my mind. Knowing that a factory contract, or generator, needs to be secure in its implemwentation, I knew security was important. 
