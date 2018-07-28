@@ -51,9 +51,11 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
   - [X] Done also on [Mintable.app](http://mintable.app)
  
 ●  	A document called design_pattern_desicions.md that explains why you chose to use the design patterns that you did.
+  see Design_Patterns.md
 
 
 ●  	A document called avoiding_common_attacks.md that explains what measures you took to ensure that your contracts are not susceptible to common attacks. (Module 9 Lesson 3)
+  - see avoiding_common_attacks.md
 
 
  
@@ -65,38 +67,31 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
 We ask that you develop your application and run the other projects during evaluation in a VirtualBox VM running Ubuntu 16.04 to reduce the chances of run time environment variables.
  
 Requirements
-●  	User Interface Requirements:
-○  	Run the app on a dev server locally for testing/grading
-○  	You should be able to visit a URL and interact with the application
-■  	App recognizes current account
-■  	Sign transactions using MetaMask
-■  	Contract state is updated
-■  	Update reflected in UI
+  - [X] 	User Interface Requirements:
+  - [X] 	Run the app on a dev server locally for testing/grading
+  - [X] 	You should be able to visit a URL and interact with the application
+  - [X] 	App recognizes current account
+  - [X]	Sign transactions using MetaMask
+  - [X] Contract state is updated
+  - [X]	Update reflected in UI
  
 ●  	Test Requirements:
-○  	Write 5 tests for each contract you wrote
-■  	Solidity or JavaScript
+  - [_]  	Write 5 tests for each contract you wrote
+  - [X]  	Solidity or JavaScript
 ○  	Explain why you wrote those tests
 ○  	Tests run with truffle test
  
-●  	Design Pattern Requirements:
-○  	Implement emergency stop
-○  	What other design patterns have you used / not used?
-■  	Why did you choose the patterns that you did?
-■  	Why not others?
+  - [X]  	Design Pattern Requirements:
+  - [X]	Implement emergency stop
+  - [X] What other design patterns have you used / not used?
+  - [X]	Why did you choose the patterns that you did?
+  - [X]	Why not others?
  
-●  	Security Tools / Common Attacks:
-○  	Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
+  - [X] 	Security Tools / Common Attacks:
+  - [X] 	Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
  
-●  	Use a library
-○  	Via EthPM or write your own
+  - [X]	  Use a library
 
-  
-●  	Stretch requirements (for bonus points, not required):
-○  	Integrate with an additional service, maybe even one we did not cover in this class
 
-For example:
-■      IPFS
-■      uPort
-■      Ethereum Name Service
-■      Oracle
+
+
