@@ -13,3 +13,4 @@ Using safemath Libraries, as well as modifiers, and open zeppelin standards prot
  
  Adding a mint() function to the ERC721 from zeppelin for the owner of the contract which wasn't included. This was done via only calling the standard `_mint()` that is only internal. That way I didn't need to trust my own code to mint a new token, but instead rely only on the trusted zeppelin code. 
  
+Note: There is a security problem with two packages in the dependecies. Those are from truffle unbox, and that is why they are there. I started the project with truffle unbox react, which I was using for 2 weeks and then when I uploaded a test on github, it showed that they were outdated and needed to be updated. I realized, everything was a year outdated and it all needed updating. Currently, if I update it, it breaks everything. So the security bug is staying until I can move to react 16, which I'm working on currently. 
