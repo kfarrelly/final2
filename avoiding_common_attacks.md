@@ -4,19 +4,12 @@
 When creating this dapp, security was on the forefront of my mind. Knowing that a factory contract, or generator, needs to be secure in its implemwentation, I knew security was important. 
 With that in mind, I made quite a few choices to protect the smart contract in multiple ways, and below are a few of the attack vectors I have addressed with my design. 
 
-First and foremost, the main Generator contracts needs to be able to generate ERC-721s reliably, and securely. This means I need to use 
- a secure standard for my ERC721 standard. Using OpenZeppelin was a no-brainer, their contracts are the industry standard. So I went
- with zeppelin for the 721 contract standards and the erc 20 standards as well. Simply importing them was too easy to resist. After that
- was handled, the only issue was ensuring the generator was secure. 
+First and foremost, the event firing, creation of tokens, and handling of error is all done via design of the `createERC721()` function. The first act is the contract creation that if fails, will stop before anything is done. This protects against re-entrancy attacks. 
+
+Using safemath Libraries, as well as modifiers, and open zeppelin standards protects against the following: 
+ - Safemath helps with overflow issues. Specifically I could call an over with my front end very easily, and that was a bug I found very early. Therefore safemath was a must. 
+ - Open Zeppelin due to how secure its known to be. 
+ - Pre and post variant modifiers for later in the design when  the generator has more functionality. 
  
- Secondly, the generator needed to properly interact with another contract so as to not create any issues for the users. One of the ways
- I choose to secure the Generator was using safemath library. Zeppelin uses these libraries as well, but I specifically ran into an overflow issue by having my front end send malicious 
- code to the contract. Therefore safemath was very important in reverting transactions that could be malicious in nature and easy to deploy. 
+ Adding a mint() function to the ERC721 from zeppelin for the owner of the contract which wasn't included. This was done via only calling the standard `_mint()` that is only internal. That way I didn't need to trust my own code to mint a new token, but instead rely on the trusted zeppelin code. 
  
- Also, standard ownership libraries and a variant conditional library was used to allow for modifiers of any nature. In reality, the smart contract
-  is only version 0.5 and will be updated in the coming months with more abilities,  so those conditionals will really help securing it in the future. 
-  
- I'll  be adding version control and the ability to update the contract, but for now, I do not know the design structure of the finished product, so I can't
- put up an upgradeable manager yet, although its on the way! 
- 
- The event firing, creation of tokens, and handling of error is all done via design of the `createERC721()` function. The first act is the contract creation that if fails, will stop before anything is done. 
