@@ -148,6 +148,21 @@ contract ERC721Generator{
          isOnline = !isOnline;
     return isOnline;
     }
+    /**
+   * @dev fallback revert
+   *
+   */
+    function() payable {
+     revert();
+ }
+   /**
+   * @dev Kill, only owner. Destroys the smart contract
+   *
+   */
+ function kill(){ 
+     require(isOwner());
+     selfdestruct(msg.sender);
+ }
     
  
     
