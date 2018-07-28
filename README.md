@@ -10,7 +10,7 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
 
   - Mintable is a dapp that allows for people to create ERC721 tokens without needing programming knowledge. The dapp will let anyone set the metadata, and information of a ERC721 standard contract. A contract is then created on the blockchain and the user who sent the transaction is the owner. Allowing for anyone to make cards/ERC721s/collectibles/anything.
 
--  	How to set it up and use the Rinkeby Test Network
+-  	How to set it up and use the Rinkeby Test Network **if you don't want to use mintable.app**
 
   `mkdir mintable`
   
@@ -25,7 +25,7 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
   Localhost should open in the browser automatically, make sure metamask is on Rinkeby test network. 
   
   
-■  	Run a local development server
+■  	Run a local development server **if you migrate on a testnetwork or live network you may run into gas issues**
 
     Run ganache in the background
     
@@ -35,37 +35,41 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
     
     `truffle test`
      
-●  	Smart Contract code should be commented according to the specs in the documentation
+■   	Smart Contract code should be commented according to the specs in the documentation
 
-    - [X] Done
+  - [X] Done
     
 
  
-●  	Create at least 5 tests for each smart contract
+■  	Create at least 5 tests for each smart contract
 
   - [X] Done
   
-  - Tests:
+Test 1: Check to see if the owner is correct and that the total generated is zero. This to my constructor values and need to be correct.
+Test 2: Confirm that the owner can turn off and on the contract. 
+Test 3: Check that a creation works properly by creating a contract and checking that the user has one contract created.
+Test 4: Pulls the address for the contract just created, checks that the name is correct. 
+Test 5: Checks that alice can transfer tokens to bob and the transaction is successful. Event is also fired. 
 
  
-●  	A development server to serve the front end interface of the application
-  - [X] Done also on [Mintable.app](http://mintable.app)
+■  	A development server to serve the front end interface of the application
+  - [X] Done. Use npm run start also on [Mintable.app](http://mintable.app)
  
-●  	A document called design_pattern_desicions.md that explains why you chose to use the design patterns that you did.
+■   	A document called design_pattern_desicions.md that explains why you chose to use the design patterns that you did.
   see Design_Patterns.md
 
 
-●  	A document called avoiding_common_attacks.md that explains what measures you took to ensure that your contracts are not susceptible to common attacks. (Module 9 Lesson 3)
+■  	A document called avoiding_common_attacks.md that explains what measures you took to ensure that your contracts are not susceptible to common attacks. (Module 9 Lesson 3)
 
   - see avoiding_common_attacks.md
 
 
  
-●  	Implement a library or an EthPM package in your project
+■   	Implement a library or an EthPM package in your project
 
-  - [X] Done using SafeMath, OpenZeppelin Contracts, Melon Libraries
+  - [X] Done using **SafeMath, OpenZeppelin Contracts, Melon Libraries**
 
-○  	If your project does not require a library or an EthPM package, demonstrate how you would do that in a contract called LibraryDemo.sol
+
   
 
 
@@ -91,7 +95,7 @@ If you want to run it locally, clone, `npm install`, then `npm run start` no nee
   - [X] 	Explain what measures you’ve taken to ensure that your contracts are not susceptible to common attacks
   - [X]	  Use a library
 # Test Requirements:
-  - [_]  	Write 5 tests for each contract you wrote
+  - [X]  	Write 5 tests for each contract you wrote
   - [X]  	Solidity or JavaScript
   - [X] 	Explain why you wrote those tests
   - [X] 	Tests run with truffle test
