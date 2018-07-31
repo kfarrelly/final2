@@ -21,7 +21,8 @@ class App extends Component {
             <Footer />
             <Headroom
               style={{
-                background: "rgba(255, 255, 255, 1)"
+                background: "rgba(255, 255, 255, 1)",
+                zIndex: "20"
               }}
             >
               <div style={{ maxWidth: 960 }} className="headroom1">

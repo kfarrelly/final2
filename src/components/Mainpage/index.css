@@ -1,5 +1,13 @@
 .h1 {
-  font-size: 7vw;
+  font-size: 6vw;
+}
+.header {
+  margin-top: -5vw;
+  font-size: 4vw;
+}
+.left {
+  position: absolute;
+  left: 0;
 }
 .topLeft {
   position: absolute;
@@ -17,22 +25,23 @@
   font-size: 1.5vw;
 }
 .max {
-  max-width: 18rem;
+  max-width: 15rem;
 }
 .h2 {
-  margin-top: 30vh;
-  text-align: left;
-  font-size: 4vw;
-  max-width: 85%;
+  font-size: 2.5rem;
 }
 .mobileSpace {
   position: absolute;
   display: none;
 }
 .catImage {
-  max-width: 18rem;
-  max-height: 18rem;
+  max-width: 15rem;
+  max-height: 15rem;
 }
+.image1 {
+  max-height: 180px;
+}
+
 .catImage1 {
   max-width: 30rem;
   max-height: 30rem;
@@ -57,24 +66,22 @@
 }
 .pos {
   position: absolute;
-  right: 75%;
-  top: 95%;
-  width: 22rem;
+  margin-top: -250px;
+  margin-left: 7vw;
 }
 .pos1 {
-  position: absolute;
-  margin-left: 3%;
+  margin-top: -520px;
+  right: 18%;
   display: block;
-  right: 75%;
-  top: 99%;
-  width: 22rem;
-  max-width: 25%;
+
+  max-width: 99%;
 }
 .pos2 {
-  margin-bottom: 2.5rem;
-  margin-left: 5rem;
-  margin-top: -15rem;
-  max-width: 70%;
+  position: absolute;
+  margin-top: -13vw;
+  margin-left: 5vw;
+
+  max-width: 50%;
 }
 .pos3 {
   position: absolute;
@@ -83,7 +90,9 @@
   bottom: 99%;
   max-width: 50%;
 }
-
+.marginBottom {
+  margin-bottom: 10px;
+}
 
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
@@ -118,15 +127,24 @@
   color: #0cf504;
 }
 .centered {
-  display: block;
-  margin: auto;
+  position: relative;
+}
+.flexBox {
+  position: absolute;
+  display: inline-flex;
+  margin-top: 13vw;
+  left: 0;
+  padding: 10px;
+}
+.flexItem {
+  margin-left: 10vw;
 }
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 64%;
+    width: 70%;
   }
 }
 @keyframes typewriterLong {
@@ -149,17 +167,37 @@
 .slick-next:before {
   display: none;
 }
-@media only screen and (max-width: 480px) {
+/* (480x800) Android */
+@media only screen and (min-width: 180px) and (max-width: 480px) {
+  /* insert styles here */
+  .flexBox {
+    position: relative;
+    display: flex;
+    float: center;
+    flex-direction: column;
+  }
+  .flexItem {
+    margin-left: 0;
+  }
   .h1 {
-    padding-top: 2.5em;
+    display: none;
   }
   .mobile-Spacing {
     margin-top: 30%;
   }
+  .topPadding {
+    padding-top: 25px;
+  }
+  .header {
+    font-size: 25px;
+    top: 0;
+    margin-top: 15vw;
+  }
+  .subtitle-header {
+    margin-top: -20vw;
+  }
   .h2 {
-    font-size: 7vw;
-
-    padding: 0;
+    font-size: 150%;
   }
   .max {
     max-width: 15rem;
@@ -179,6 +217,7 @@
   .isright {
     left: 0;
     width: 100%;
+    margin-top: 50vw;
     top: 50%;
   }
 
@@ -192,15 +231,103 @@
   }
   .mobileSpace {
     position: relative;
-    height: 90%;
+    height: 100%;
     display: block;
-    padding-bottom: 35vh;
+    padding-bottom: 455px;
   }
   .relative {
     margin-top: 200px;
   }
+  .mobileCentered {
+    text-align: center;
+  }
+  .centered {
+    position: relative;
+  }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .flexBox {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 70%;
+    flex-direction: column;
+  }
+  .flexItem {
+    margin-left: 0;
+  }
+  .h1 {
+    margin-top: 10vw;
+    font-size: 50px;
+  }
+  .header {
+    position: absolute;
+    margin-top: -30vw;
+    font-size: 35px;
+  }
+  .centered {
+    position: relative;
+    display: flex;
+    width: 50%;
+  }
+
+  .subtitle-header {
+    left: 0;
+    margin-top: -15vw;
+
+    font-size: 100%;
+  }
+
+  .catImage1 {
+    display: none;
+  }
+  .pos {
+    display: none;
+  }
+  .pos1 {
+    display: none;
+  }
+  .pos2 {
+    display: none;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards > * {
+    flex: 1 1 1 350px;
+  }
+  .mobileSpace {
+    position: relative;
+    height: 100%;
+    display: block;
+    padding-bottom: 485px;
+  }
+  .isright {
+    left: 0;
+    width: 100%;
+    top: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .h1 {
+    margin-top: 7vw;
+    font-size: 50px;
+  }
+  .header {
+    position: absolute;
+    font-size: 50px;
+    margin-top: -300px;
+  }
+
+  .subtitle-header {
+    left: 0;
+    margin-top: -20vw;
+
+    font-size: 100%;
+  }
+
   .catImage1 {
     display: none;
   }
@@ -230,25 +357,12 @@
     top: 80%;
   }
 }
-@media only screen and (max-width: 1080px) {
-  .catImage1 {
-    display: none;
-  }
-  .pos {
-    display: none;
-  }
-  .pos1 {
-    display: none;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cards > * {
-    flex: 1 1 1 350px;
-  }
+@media screen and (min-width: 1080px) {
+  /* insert styles here */
   .h1 {
-    text-align: center;
+    margin-left: -70px;
+  }
+  .subtitle-header {
+    font-size: 100%;
   }
 }

@@ -52,30 +52,7 @@ class CTAheader extends Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       variableWidth: true,
-      nextArrow: <SampleNextArrow />,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            infinite: true,
-
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            infinite: true,
-            variableWidth: false
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            infinite: true
-          }
-        }
-      ]
+      nextArrow: <SampleNextArrow />
     };
     var item = {};
     return (
@@ -92,24 +69,26 @@ class CTAheader extends Component {
           <h1 className="has-text-white h1 topLeft line-1 anim-typewriter">
             Get your collectible on.{" "}
           </h1>
-          <div className="container has-text-white h2 topLeft ">
-            <p>Browse, Create, Manage, Collect...</p>
-            <p>
+          <span className="header has-text-white left">
+            Browse, Manage, Collect, or Create
+          </span>
+          <span className=" h2 has-text-white topPadding left">
+            <p className="subtitle-header">
               {" "}
-              and even <span className="green">Sell</span> your ERC-721 tokens{" "}
-            </p>{" "}
-            <p>on the Ethereum Blockchain </p>
-          </div>
+              and even <span className="green">Sell</span> your ERC-721 tokens
+              on the Ethereum Blockchain
+            </p>
+          </span>
           <div className="isright">
             <Slider {...settings}>
               <div className="column max ">
                 <div className="card border1 shadowbox zind">
                   <div className="card-image  is-marginless">
-                    <figure className="image catImage  is-marginless">
+                    <figure className="image  catImage is-marginless">
                       <img
                         src="https://pbs.twimg.com/profile_images/3318891830/06715c901d11d2c8bb522ac87d3c39a7_400x400.png"
                         alt={item.name}
-                        className="border2"
+                        className="border2 image1"
                       />
                     </figure>
                   </div>
@@ -152,7 +131,11 @@ class CTAheader extends Component {
                       <p>{item.number}</p>
                     </div>
                   </div>
-                  <AwesomeButton type="facebook" action={this.props.create}>
+                  <AwesomeButton
+                    type="github"
+                    action={this.props.create}
+                    className="marginBottom"
+                  >
                     Create a token!
                   </AwesomeButton>
                 </div>
@@ -165,7 +148,7 @@ class CTAheader extends Component {
                       <img
                         src={this.state.img1}
                         alt={item.name}
-                        className="border2"
+                        className="border2 image1"
                       />
                     </figure>
                   </div>
@@ -208,7 +191,11 @@ class CTAheader extends Component {
                       <p>{item.number}</p>
                     </div>
                   </div>
-                  <AwesomeButton type="facebook" action={this.props.create}>
+                  <AwesomeButton
+                    type="github"
+                    action={this.props.create}
+                    className="marginBottom"
+                  >
                     Create a token!
                   </AwesomeButton>
                 </div>
@@ -220,7 +207,7 @@ class CTAheader extends Component {
                       <img
                         src="http://www.geldfritz.net/cdn/21/1990/406/proof-of-ownership-letter-sample_55048.jpg"
                         alt={item.name}
-                        className="border2"
+                        className="border2 image1"
                       />
                     </figure>
                   </div>
@@ -263,12 +250,36 @@ class CTAheader extends Component {
                       <p>{item.number}</p>
                     </div>
                   </div>
-                  <AwesomeButton type="facebook" action={this.props.create}>
+                  <AwesomeButton
+                    type="github"
+                    action={this.props.create}
+                    className="marginBottom"
+                  >
                     Create a token!
                   </AwesomeButton>
                 </div>
               </div>
             </Slider>
+          </div>{" "}
+          <div className="flexBox">
+            <div className="flexItem">
+              <AwesomeButton
+                type="secondary"
+                action={this.props.create}
+                className="marginBottom"
+              >
+                Watch a video on how it works
+              </AwesomeButton>
+            </div>
+            <div className="flexItem">
+              <AwesomeButton
+                type="facebook"
+                action={this.props.create}
+                className="marginBottom"
+              >
+                Create a token!
+              </AwesomeButton>
+            </div>
           </div>
         </LazyHero>
         <section className="hero is-medium is-bold is-dark mobilespace">
